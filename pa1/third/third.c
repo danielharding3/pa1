@@ -31,7 +31,7 @@ hashTable *createHashTable(int size) {
 	}
 	
 	return table;
-	free(table);
+	//free(table);
 }
 
 node *createNewNode(int data, struct node *front) {
@@ -41,7 +41,7 @@ node *createNewNode(int data, struct node *front) {
 	front = temp;
 	
 	return front;
-	free(temp);
+	//free(temp);
 }
 
 int search(struct hashTable *table, int num) {
@@ -173,7 +173,9 @@ int main(int argc, char** argv) {
 		
 
 
-
+	
 	fclose(fptr);
+	free(table);
+	free(temp);
 	return 0;
 }
