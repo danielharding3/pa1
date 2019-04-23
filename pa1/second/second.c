@@ -15,7 +15,7 @@ node *createNewNode(int data, node *front) {
 	createNewNode->data = data;
 	createNewNode->next = front;
 	return createNewNode;
-	free(createNewNode);
+	//free(createNewNode);
 }
 	
 int search(int data, node *front) {
@@ -187,7 +187,7 @@ int main(int argc, char** argv) {
 	fclose(fptr);
 	
 		
-	
+	free(front);
 	return 0;
 }
 
